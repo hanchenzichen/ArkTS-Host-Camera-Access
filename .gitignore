@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.eggs/
+
+# HarmonyOS / Node
+/frontend/build/
+/frontend/node_modules/
+/frontend/oh_modules/
+/frontend/.preview/
+/frontend/.idea/
+/frontend/.DS_Store
+/frontend/*.hvigorfile
+/frontend/*.local
