@@ -69,7 +69,7 @@ This project uses a Client-Server (C/S) architecture, consisting of two main par
     ```
 3.  **Run the backend service (运行后端服务)**
     ```bash
-    python app.py
+    python camera_server.py
     ```
     The service will start and listen on port `5000`.
     服务启动后将监听在 `5000` 端口。
@@ -113,8 +113,8 @@ This project uses a Client-Server (C/S) architecture, consisting of two main par
         `10.0.2.2` 是模拟器访问宿主机（你的电脑）的特殊地址。
     -   **When using a physical device or a third-party emulator (使用实体手机或第三方模拟器时)**: Replace `10.0.2.2` with your computer's LAN IP address (e.g., `192.168.1.10`).
         将 `10.0.2.2` 替换为你电脑的局域网 IP 地址（例如 `192.168.1.10`）。
-    -   **Listening Address (监听地址)**: It can be set to `0.0.0.0` to allow access from all addresses, including LAN, localhost, and 127.0.0.1.
-        可将其设置为`0.0.0.0`，所有地址都可以访问，这样无论是局域网还是localhost或者是127.0.0.1都可以访问。
+    -   **Listening Address (监听地址)**: The backend is set to `0.0.0.0`, allowing access from all addresses, including LAN, localhost, and 127.0.0.1.
+        后端服务已设置为`0.0.0.0`，所有地址都可以访问，这样无论是局域网还是localhost或者是127.0.0.1都可以访问。
 
 4.  **Run the application (运行应用)**
     Select the configured emulator as the target device and click "Run".
@@ -125,7 +125,7 @@ This project uses a Client-Server (C/S) architecture, consisting of two main par
 ```
 ArkTS-Host-Camera-Access/
 ├── backend/                  # Backend service code (后端服务代码)
-│   ├── app.py                # Main Flask application (Flask 主程序)
+│   ├── camera_server.py      # Main Flask application (Flask 主程序)
 │   └── requirements.txt      # Python dependencies (Python 依赖)
 │
 ├── frontend/                 # Frontend HarmonyOS project (前端鸿蒙工程)
@@ -177,6 +177,11 @@ ArkTS-Host-Camera-Access/
 
 Issues and Pull Requests are welcome.
 欢迎提交问题 (Issues) 和合并请求 (Pull Requests)。
+
+## ⚠️ 免责声明 (Disclaimer)
+This README was generated with the assistance of an AI. In case of any discrepancies between this document and the actual code, please investigate on your own and consider the source code as the single source of truth.
+
+该 `README.md` 文件由 AI 辅助生成。如果文档内容与实际代码存在不一致之处，请自行研究，并以源代码为最终标准。
 
 ## 📄 许可证 (License)
 
