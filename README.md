@@ -77,10 +77,12 @@ This project uses a Client-Server (C/S) architecture, consisting of two main par
 ### **Step 2: Set Up the Frontend Application (第二步：设置前端应用 HarmonyOS)**
 
 1.  **Open the project (打开项目)**
+    Unzip the `frontend` compressed package downloaded locally to the current directory.
+    将下载到本地的`frontend`压缩包解压到当前目录下
     Open the `frontend` folder from the repository using DevEco Studio.
     使用 DevEco Studio 打开仓库中的 `frontend` 文件夹。
 
-2.  **Declare permissions (Important!) (声明权限 重要！)**
+3.  **Declare permissions (Important!) (声明权限 重要！)**
     The application requires network and storage permissions to function correctly. Open `entry/src/main/module.json5` and ensure the `requestPermissions` field includes the following:
     应用需要网络和存储权限才能正常工作。打开 `entry/src/main/module.json5` 文件，确保 `requestPermissions` 字段包含了以下内容：
 
@@ -102,7 +104,7 @@ This project uses a Client-Server (C/S) architecture, consisting of two main par
     > **Tip (提示)**: You also need to add a description for `write_media_reason` in `entry/src/main/resources/base/element/string.json`.
     > 同时需要在 `entry/src/main/resources/base/element/string.json` 中为 `write_media_reason` 添加说明。
 
-3.  **Modify the backend service address (修改后端服务地址)**
+4.  **Modify the backend service address (修改后端服务地址)**
     In all `.ets` page files (`CameraPhoto.ets`, `PhotoAlbum.ets`, `FilePreviewPage.ets`), find the following line:
     在所有 `ets` 页面文件 (`CameraPhoto.ets`, `PhotoAlbum.ets`, `FilePreviewPage.ets`) 中，找到下面这行代码：
 
@@ -116,7 +118,7 @@ This project uses a Client-Server (C/S) architecture, consisting of two main par
     -   **Listening Address (监听地址)**: The backend is set to `0.0.0.0`, allowing access from all addresses, including LAN, localhost, and 127.0.0.1.
         后端服务已设置为`0.0.0.0`，所有地址都可以访问，这样无论是局域网还是localhost或者是127.0.0.1都可以访问。
 
-4.  **Run the application (运行应用)**
+5.  **Run the application (运行应用)**
     Select the configured emulator as the target device and click "Run".
     选择配置好的模拟器作为目标设备，点击 "Run" 运行项目。
 
